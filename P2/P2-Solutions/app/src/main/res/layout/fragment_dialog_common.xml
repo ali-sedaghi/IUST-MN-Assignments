@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/confirm_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:fontFamily="@font/iran_sans"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/confirm_dialog_question"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/iran_sans"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirm_dialog_title" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/common_dialog_text_field_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/iran_sans"
+            android:layoutDirection="rtl"
+            android:textColorHint="@color/gray"
+            android:visibility="gone"
+            app:boxBackgroundColor="@color/light_gray"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:hintTextColor="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirm_dialog_question">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/common_dialog_text_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iran_sans"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/confirm_dialog_cancel_button"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:fontFamily="@font/iran_sans"
+            android:layout_marginTop="16dp"
+            android:shadowRadius="@android:integer/config_mediumAnimTime"
+            android:text="@string/cancel"
+            android:textColor="@color/secondary_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/confirm_dialog_accept_button"
+            app:layout_constraintTop_toBottomOf="@+id/common_dialog_text_field_layout" />
+
+        <Button
+            android:id="@+id/confirm_dialog_accept_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/iran_sans"
+            android:backgroundTint="@color/secondary_blue"
+            android:shadowRadius="@android:integer/config_mediumAnimTime"
+            android:text="حذف"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/common_dialog_text_field_layout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

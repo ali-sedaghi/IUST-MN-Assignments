@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layoutDirection="rtl">
+    <group android:id="@+id/edit_name_gp">
+        <item
+            android:background="@color/white"
+            android:id="@+id/edit_folder_name"
+            android:gravity="center"
+            android:fontFamily="@font/iran_sans"
+            android:icon="@drawable/ic_edit"
+            android:title="@string/edit" />
+    </group>
+    <group android:id="@+id/delete_gp">
+        <item
+            android:background="@color/white"
+            android:id="@+id/delete_folder"
+            android:gravity="center"
+            android:fontFamily="@font/iran_sans"
+            android:icon="@drawable/ic_delete"
+            android:title="@string/deleting" />
+    </group>
+</menu>

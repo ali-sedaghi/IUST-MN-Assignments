@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/delete_note"
+            android:background="@color/white"
+            android:fontFamily="@font/iran_sans"
+            android:gravity="center"
+            android:icon="@drawable/ic_delete"
+            android:title="@string/deleting" />
+    </group>
+</menu>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Note</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cancel">انصراف</string>
+    <string name="untitled">بدون عنوان</string>
+    <string name="note_editor_hint">متن خود را اینجا بنویسید.</string>
+    <string name="notes">یادداشت‎ها</string>
+    <string name="deleting">حذف کردن</string>
+    <string name="edit">تغییر عنوان</string>
+    <string name="new_folder">پوشه جدید</string>
+    <string name="new_folder_desctiption">برای پوشه خود عنوان بنویسید.</string>
+    <string name="create_new_folder">ایجاد پوشه</string>
+    <string name="folder_title">عنوان پوشه</string>
+    <string name="delete_note">حذف یادداشت</string>
+    <string name="delete_note_description">آیا از حذف این یادداشت اطمینان دارید؟</string>
+    <string name="delete">حذف</string>
+    <string name="delete_folder">حذف پوشه</string>
+    <string name="delete_folder_description">آیا از حذف این پوشه اطمینان دارید؟</string>
+    <string name="edit_folder_name">تغییر عنوان پوشه</string>
+    <string name="save">ذخیره</string>
+    <string name="count_notes">حاوی %1$d یادداشت</string>
+    <string name="last_visit">آخرین بازدید:  %1$d %2$s پیش</string>
+    <string name="unname">بی نام</string>
+</resources>
